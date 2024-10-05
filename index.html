@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: rgb(24, 26, 37);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 97px;
+            background-color: black;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover {
+            color: rgb(146, 146, 205);
+            font-size: 1.01rem;
+        }
+        main hr {
+            border: 0;
+            background: rgb(110, 110, 168);
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+        .left {
+            font-size: 1.5rem;
+        }
+        .firstSection {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin: 110px 0;
+        }
+        .firstSection > div {
+            width: 30%;
+        }
+        .leftSection {
+            font-size: 3rem;
+        }
+        .rightSection img {
+            padding-top: 0px;
+            padding-right: 30px;
+            width: 110%;
+        }
+        .purple {
+            color: rgb(125, 43, 203);
+        }
+        #element {
+            color: rgb(98, 98, 175);
+        }
+        .second {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+        .second h1 {
+            font-size: 1.9rem;
+        }
+        .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+        .vertical {
+            height: 93px;
+            width: 1px;
+            background: white;
+            margin: 0 100px;
+        }
+        .text-gray {
+            color: gray;
+        }
+        .image-top {
+            width: 100%;
+            display: block;
+        }
+
+       
+        .about-section {
+            background-color: rgb(34, 36, 48);
+            padding: 60px;
+            text-align: center;
+        }
+        .about-section h2 {
+            font-size: 2.5rem;
+            color: rgb(125, 43, 203);
+        }
+        .about-section p {
+            margin: 20px 0;
+            font-size: 1.2rem;
+            color: lightgray;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.8;
+        }
+
+        
+        .hero {
+            background-image: url;
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero-text {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .hero-text h2 {
+            font-size: 3rem;
+            color: rgb(125, 43, 203);
+        }
+        .services-section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 60px;
+            gap: 40px;
+        }
+        .service-card {
+            background-color: rgb(34, 36, 48);
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            width: 300px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            background-color: rgb(46, 48, 61);
+        }
+        .service-card h3 {
+            font-size: 1.8rem;
+            color: rgb(125, 43, 203);
+            margin-bottom: 15px;
+        }
+        .service-card p {
+            font-size: 1rem;
+            color: lightgray;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+        .contact form {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                margin: 0 auto;
+                text-align: center;
+            }
+            .contact input, .contact textarea {
+                margin-bottom: 20px;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                background-color: rgb(33, 35, 50);
+                color: white;
+            }
+            .contact input[type="submit"] {
+                background-color: rgb(125, 43, 203);
+                cursor: pointer;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Sneha's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="home">
+       
+        <section class="firstSection">
+            <div class="leftSection">Hi, My name is <span class="purple">Sneha Tomar</span>
+                <div>I am a student at</div>
+
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="https://png.pngtree.com/background/20230525/original/pngtree-female-developer-working-at-a-table-at-night-picture-image_2734060.jpg">
+            </div>
+        </section>
+        <hr>
+
+       
+        <section id="about" class="about-section">
+            <h2>About Me</h2>
+            <p>
+                I'm a passionate and dedicated programmer currently expanding my skills in software development. With hands-on experience developing my first app, I've gained foundational knowledge in app development, web development, and video editing. I am continuously improving my skills in design and development by working on personal projects and exploring new technologies.
+
+My journey so far has equipped me with a basic understanding of web design, front-end development, and multimedia content creation, and I am excited to take on new challenges and deepen my expertise in these areas. I am eager to collaborate, learn from others, and contribute to meaningful projects that make an impact.
+            </p>
+        </section>
+
+        
+        <section id="services">
+            <div class="hero">
+                <div class="hero-text">
+                    <h2>Your Go-To Developer & Creator</h2>
+                    <p style="text-align: center;">Providing top-notch development and creative solutions</p>
+                </div>
+            </div>
+
+            <div class="services-section">
+                <div class="service-card">
+                    <h3>Web Developer</h3>
+                    <p>Providing you a responsive, dynamic websites that provide seamless user experiences. From small business sites to custom web applications, I’ve got you covered.</p>
+                </div>
+                <div class="service-card">
+                    <h3>App Developer</h3>
+                    <p>For apps, I build solutions that are intuitive, fast, and scalable for users worldwide.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Video Editor</h3>
+                    <p>From editing videos to creating YouTube content, I offer fast and creative video editing services tailored to your needs.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Python Programmer</h3>
+                    <p>I am learning to cover a range of tasks from web scraping, automation, data analysis, to full-fledged software development.</p>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h1 class="section-title" style="text-align: center;">Contact Me</h1>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Sneha Tomar" required>
+                <input type="email" name="email" placeholder="snehatomar267@gmail.com" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+    </main>
+
+    
+    <footer id="contact">
+        <p>&copy; 2024 Sneha's Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Amity University', 'Gwalior'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+</html> 
